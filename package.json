@@ -4,8 +4,7 @@
 	"description": "make chain use typescript",
 	"main": "index.js",
 	"scripts": {
-		"start": "node index.js",
-		"prestart": "tsc"
+		"start": "tsc-watch --onSuccess \" node dist/index.js\" "
 	},
 	"repository": {
 		"type": "git",
@@ -16,5 +15,9 @@
 	"bugs": {
 		"url": "https://github.com/island47/typechain/issues"
 	},
-	"homepage": "https://github.com/island47/typechain#readme"
+	"homepage": "https://github.com/island47/typechain#readme",
+	"dependencies": {
+		"crypto-js": "^4.0.0",
+		"tsc-watch": "^4.2.9"
+	}
 }
